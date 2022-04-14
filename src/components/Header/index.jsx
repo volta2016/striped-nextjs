@@ -1,6 +1,6 @@
 import Logo from "./Logo";
 import { Container } from "styles/InterfaceComponents";
-import { Nav } from "./styles";
+import { Nav, HeaderBg } from "./styles";
 import Button from "../Common/button";
 import NavBar from "./NavBar";
 //import Arrow from "../icons/Arrow";
@@ -20,10 +20,11 @@ const Header = () => {
             rel="noreferrer"
             outline="true"
           >
-            VER CÓDIGO
+            Sign in
           </Button>
         </Container>
       </Nav>
+      <HeaderBg />
     </header>
   );
 };

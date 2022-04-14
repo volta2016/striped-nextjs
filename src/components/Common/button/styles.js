@@ -2,10 +2,10 @@ import styled, { css } from "styled-components";
 
 export const ButtonBase = styled.a`
   cursor: pointer;
-  padding: 1rem 1rem;
+  padding: 0.5rem 1rem;
   color: ${({ theme }) => theme.colors.primary.white};
   border-radius: 90px;
-  background: ${({ theme }) => theme.colors.primary.button};
+  background: ${({ theme }) => theme.colors.secondary.secondarybuttons};
   font-size: ${({ theme }) => theme.sizeFont.sm};
   transition: 0.3s;
   display: flex;
@@ -13,18 +13,18 @@ export const ButtonBase = styled.a`
   &:hover {
     background: ${({ theme }) => theme.colors.primary.buttonbasehover};
   }
-  ${(props) => {
+
+  ${(props) =>
     props.outline &&
-      css`
-        background: ${({ theme }) => theme.colors.primary.trans};
-        &:hover {
-          background: ${({ theme }) => theme.colors.secondary.light};
-        }
-        & svg {
-          margin-right: 0.5rem;
-        }
-      `;
-  }}
+    css`
+      background: ${({ theme }) => theme.colors.secondary.light};
+      &:hover {
+        background: ${({ theme }) => theme.colors.secondary.light2};
+      }
+      & svg {
+        margin-right: 0.5rem;
+      }
+    `}
 `;
 
 export const ButtonForm = styled.a`

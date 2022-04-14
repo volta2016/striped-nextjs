@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
   html {
     scroll-behavior: smooth;
   }
+ 
   * {
     box-sizing: border-box;
   }
@@ -16,6 +17,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 24px;
     color: ${({ theme }) => theme.colors.primary.subtitles};
+  }
+  header {
+    position: relative;
   }
   main {
     padding: 0 1rem;

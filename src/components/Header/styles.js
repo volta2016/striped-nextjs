@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 export const LogoTitle = styled.a`
   font-size: ${({ theme }) => theme.sizeFont.lg1};
+  color: ${({ theme }) => theme.colors.primary.white};
+  font-weight: ${({ theme }) => theme.sizeWeight.md};
 `;
 
 export const Nav = styled.nav`
@@ -17,7 +19,6 @@ export const Nav = styled.nav`
 export const NavGroup = styled.ul`
   display: flex;
   gap: 2.5rem;
-  background-color: gray;
   list-style: none;
 `;
 
@@ -45,4 +46,15 @@ export const NavItem = styled.li`
     color: ${({ theme }) => theme.colors.primary.darkblue};
     transition: color 0.3s ease;
   }
+`;
+
+export const HeaderBg = styled.div`
+  position: absolute;
+  background: ${({ theme }) => theme.colors.secondary.gradientback};
+  clip-path: polygon(0 0, 100% 0, 100% 37%, 0 100%);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  z-index: 0;
 `;
