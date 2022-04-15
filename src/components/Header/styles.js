@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   padding: 1rem 1rem;
-  z-index: 1;
+  z-index: 2;
   background: rgba(255, 255, 255, 0.01);
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
   backdrop-filter: blur(0.63rem);
@@ -50,11 +50,15 @@ export const NavItem = styled.li`
 
 export const HeaderBg = styled.div`
   position: absolute;
-  background: ${({ theme }) => theme.colors.secondary.gradientback};
-  clip-path: polygon(0 0, 100% 0, 100% 37%, 0 100%);
   top: 0;
   left: 0;
   width: 100%;
   height: 500px;
   z-index: 0;
+  background: ${({ theme }) => theme.colors.secondary.gradientback};
+  clip-path: polygon(0 0, 100% 0, 100% 37%, 0 100%);
+`;
+
+export const BoxHero = styled.div`
+  width: 620px;
 `;

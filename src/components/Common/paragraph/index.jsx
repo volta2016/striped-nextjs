@@ -1,5 +1,5 @@
 import React from "react";
-import { ParagraphContainer } from ".styles";
+import { ParagraphContainer } from "./styles";
 
 const Paragraph = ({ children, ...props }) => {
   return <ParagraphContainer {...props}>{children}</ParagraphContainer>;

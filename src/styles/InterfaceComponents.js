@@ -11,6 +11,12 @@ export const Container = styled.div`
       justify-content: space-between;
       align-items: center;
     `}
+  ${(props) =>
+    props.wrapper &&
+    css`
+      position: relative;
+      z-index: 1;
+    `}
   @media (min-width: 768px) {
     & article:nth-child(2) div > div {
       order: 0;
