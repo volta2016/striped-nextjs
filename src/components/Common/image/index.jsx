@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { HeroImage } from "./styles";
 
 const NextImage = ({ src, alt, width, height }) => {
-  return <Image src={src} alt={alt} width={width} height={height} />;
+  return <HeroImage src={src} alt={alt} width={width} height={height} />;
 };
 
 export default NextImage;

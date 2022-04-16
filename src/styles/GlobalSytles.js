@@ -50,9 +50,6 @@ const GlobalStyle = createGlobalStyle`
     }
   }
   
-  
-
-    
    button {
     border-radius: 0;
     border: none;
@@ -63,6 +60,7 @@ const GlobalStyle = createGlobalStyle`
       outline: none;
     }
   }
+
 `;
 
 export default GlobalStyle;

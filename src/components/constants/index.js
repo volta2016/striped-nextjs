@@ -1,4 +1,20 @@
-export const UrlButtons = {
-  Portafolio: "https://www.linkedin.com/in/yadu-lopez/",
-  Github: "https://github.com/yadurani",
-};
+const menuItems = [
+  {
+    path: "/#banner",
+    name: "Products",
+  },
+  {
+    path: "/#services",
+    name: "Developers",
+  },
+  {
+    path: "/#testimonials",
+    name: "Company",
+  },
+  {
+    path: "/#news",
+    name: "Pricing",
+  },
+];
+
+export default menuItems;

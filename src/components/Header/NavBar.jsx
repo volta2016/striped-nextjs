@@ -1,7 +1,7 @@
 import React from "react";
 import { NavGroup, NavItem } from "./styles";
 import Link from "next/link";
-import menuItems from "./header.data";
+import menuItems from "../constants";
 const NavBar = () => {
   return (
     <NavGroup>

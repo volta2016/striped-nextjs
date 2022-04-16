@@ -13,7 +13,7 @@ export const Nav = styled.nav`
   z-index: 2;
   background: rgba(255, 255, 255, 0.01);
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
-  backdrop-filter: blur(0.63rem);
+  backdrop-filter: blur(0.05rem);
 `;
 
 export const NavGroup = styled.ul`

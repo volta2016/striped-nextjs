@@ -30,15 +30,16 @@ const Header = () => {
       <HeaderBg />
       <Container wrapper={true}>
         <Box />
-        <NextImage
-          src="/payment-hero.png"
-          alt="Payments 
+      </Container>
+      <NextImage
+        src="/payment-hero.png"
+        alt="Payments 
               infrastructure 
               for the internet"
-          width={600}
-          height={700}
-        />
-      </Container>
+        width="600"
+        height="700"
+        className="heroimage"
+      />
     </header>
   );
 };

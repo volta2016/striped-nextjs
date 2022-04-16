@@ -4,16 +4,20 @@ export const ButtonBase = styled.a`
   cursor: pointer;
   padding: 0.5rem 1rem;
   color: ${({ theme }) => theme.colors.primary.white};
+  background: ${({ theme }) => theme.colors.primary.primarybuttons};
   border-radius: 90px;
-  background: ${({ theme }) => theme.colors.secondary.secondarybuttons};
   font-size: ${({ theme }) => theme.sizeFont.sm};
   transition: 0.3s;
-  display: flex;
+  display: inline-block;
   align-items: center;
+  width: auto;
+  & svg {
+    margin-left: 0.5rem;
+    fill: white;
+  }
   &:hover {
     background: ${({ theme }) => theme.colors.primary.buttonbasehover};
   }
-
   ${(props) =>
     props.outline &&
     css`
@@ -23,6 +27,9 @@ export const ButtonBase = styled.a`
       }
       & svg {
         margin-right: 0.5rem;
+      }
+      &.ountlinetwo {
+        color: ${({ theme }) => theme.colors.primary.darkblue};
       }
     `}
 `;
