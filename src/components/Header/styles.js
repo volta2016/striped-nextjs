@@ -61,4 +61,11 @@ export const HeaderBg = styled.div`
 
 export const BoxHero = styled.div`
   width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+`;
+
+export const BoxButton = styled.div`
+  display: flex;
 `;

@@ -11,7 +11,7 @@ const theme = {
       buttonbasehover: "11253E",
     },
     secondary: {
-      secondarybuttons: "#0a2540",
+      secondarybuttons: "#19385E",
       trans: "transparent",
       light: "rgba(255,255,255,.2)",
       light2: "rgba(255,255,255,.5)",

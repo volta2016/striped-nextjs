@@ -4,7 +4,6 @@ import { Nav, HeaderBg } from "./styles";
 import Button from "../Common/button";
 import NavBar from "./NavBar";
 import Box from "./Box";
-
 import NextImage from "components/Common/image";
 //import Arrow from "../icons/Arrow";
 

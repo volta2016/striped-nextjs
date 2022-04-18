@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const ParagraphContainer = styled.p`
   color: ${({ theme }) => theme.colors.primary.subtitles};
   line-height: 34px;
+  margin: 0;
   ${(props) =>
     props.bold &&
     css`

@@ -11,13 +11,14 @@ export const ButtonBase = styled.a`
   display: inline-block;
   align-items: center;
   width: auto;
+  &:hover {
+    background: ${({ theme }) => theme.colors.secondary.secondarybuttons};
+  }
   & svg {
     margin-left: 0.5rem;
     fill: white;
   }
-  &:hover {
-    background: ${({ theme }) => theme.colors.primary.buttonbasehover};
-  }
+
   ${(props) =>
     props.outline &&
     css`
@@ -26,10 +27,17 @@ export const ButtonBase = styled.a`
         background: ${({ theme }) => theme.colors.secondary.light2};
       }
       & svg {
-        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+        fill: white;
       }
       &.ountlinetwo {
         color: ${({ theme }) => theme.colors.primary.darkblue};
+        margin-left: 2rem;
+        padding: 0.5rem 0rem;
+        & svg.ountlinetwo {
+          margin-left: 0.5rem;
+          fill: #19385e;
+        }
       }
     `}
 `;

@@ -1,4 +1,4 @@
-export default function Arrow() {
+export default function Arrow({ className }) {
   return (
     <svg
       version="1.1"
@@ -9,6 +9,7 @@ export default function Arrow() {
       width="10px"
       height="12px"
       viewBox="0 0 451.847 451.847"
+      className={className ? "ountlinetwo" : ""}
     >
       <g>
         <path
