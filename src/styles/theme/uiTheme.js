@@ -4,7 +4,7 @@ const theme = {
       headlines: "#393939",
       subtitles: "#425466",
       primarybuttons: "#11253e",
-      blue: "#01d4ff",
+      purple: "#635CFF",
       darkblue: "#092540",
       white: "#ffffff",
       buttonbase: "11253E",

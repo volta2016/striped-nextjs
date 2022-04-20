@@ -33,7 +33,6 @@ export const ButtonBase = styled.a`
       &.ountlinetwo {
         color: ${({ theme }) => theme.colors.primary.darkblue};
         margin-left: 2rem;
-        padding: 0.5rem 0rem;
         & svg.ountlinetwo {
           margin-left: 0.5rem;
           fill: #19385e;

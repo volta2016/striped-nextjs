@@ -7,7 +7,7 @@ const Partners = () => {
   return (
     <section>
       <Container>
-        <GridPartners partners={partners.brands}></GridPartners> Partners
+        <GridPartners partners={partners.brands}></GridPartners>
       </Container>
     </section>
   );

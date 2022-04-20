@@ -33,3 +33,9 @@ export const Container = styled.div`
     padding: 0 1rem;
   }
 `;
+
+export const ContainerFull = styled.div`
+  width: 100%;
+  display: grid;
+  place-content: end;
+`;
