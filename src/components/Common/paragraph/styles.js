@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const ParagraphContainer = styled.p`
-  color: ${({ theme }) => theme.colors.primary.subtitles};
+  color: ${({ colorfont }) => (colorfont === "white" ? "#ffffff" : "#393939")};
   line-height: 34px;
   margin: 0;
   overflow-wrap: break-word;
@@ -13,7 +13,9 @@ export const ParagraphContainer = styled.p`
   ${(props) =>
     props.bold &&
     css`
-      color: ${({ theme }) => theme.colors.primary.purple};
+      color: ${({ bold }) => (bold === "purple" ? "#635CFF" : "#01D4FF")};
       font-weight: ${({ theme }) => theme.sizeWeight.lg};
     `}
 `;
+
+//colorfont;

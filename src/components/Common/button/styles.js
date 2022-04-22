@@ -39,6 +39,24 @@ export const ButtonBase = styled.a`
         }
       }
     `}
+
+  ${(props) =>
+    props.backcolor &&
+    css`
+      margin-top: 2rem;
+      color: ${({ backcolor }) =>
+        backcolor === "purple" ? "#ffffff" : "#092540"};
+      background: ${({ backcolor }) =>
+        backcolor === "purple" ? "#635CFF" : "#01D4FF"};
+      &:hover {
+        background: ${({ theme }) => theme.colors.secondary.secondaryback};
+      }
+      & svg {
+        margin-left: 0.5rem;
+        fill: ${({ backcolor }) =>
+          backcolor === "purple" ? "#ffffff" : "#092540"};
+      }
+    `}
 `;
 
 export const ButtonForm = styled.a`

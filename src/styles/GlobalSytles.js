@@ -21,9 +21,7 @@ const GlobalStyle = createGlobalStyle`
   header {
     position: relative;
   }
-  main {
-    padding: 0 1rem;
-  }
+  
   ul, ol {
     padding: 0;
     margin: 0;
@@ -59,6 +57,19 @@ const GlobalStyle = createGlobalStyle`
     &:focus {
       outline: none;
     }
+  }
+
+  .dividerOne {
+    margin-top: 5rem;
+    height: 256px;
+    clip-path: polygon(0 100%,100% 0,100% 101%,0% 101%);
+    background: ${({ theme }) => theme.colors.primary.darkblue} ;
+  }
+
+  .dividerTwo {
+    height: 256px;
+     clip-path: polygon(0 100%,100% 0,100% 101%,0% 101%);
+    background: ${({ theme }) => theme.colors.primary.white} ;
   }
 
 `;

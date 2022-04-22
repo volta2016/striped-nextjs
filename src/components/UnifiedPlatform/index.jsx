@@ -1,16 +1,19 @@
 import React from "react";
 import { Container, ContainerFull } from "../../styles/InterfaceComponents";
 import { GridText } from "./styles";
+import UrlButtons from "../constants/urlButtons";
 import Image from "next/image";
 import Paragraph from "../Common/paragraph";
 import TitleH2 from "../Common/title/TitleH2";
+import Button from "components/Common/button";
+import Arrow from "components/icons/Arrow";
 
 const UnifiedPlatform = () => {
   return (
     <section>
       <Container>
-        <Paragraph bold={true}>Unified platform</Paragraph>
-        <TitleH2 variant="col-6">
+        <Paragraph bold="purple">Unified platform</Paragraph>
+        <TitleH2 colortitle="headlines" variant="col-6">
           A fully integrated suite of payments products
         </TitleH2>
         <GridText>
@@ -26,6 +29,16 @@ const UnifiedPlatform = () => {
               </span>{" "}
               and everything in between.
             </Paragraph>
+            <Button
+              link={UrlButtons.Github}
+              tipo="link"
+              role="link"
+              target="_blank"
+              rel="noreferrer"
+              backcolor="purple"
+            >
+              Star with paymets <Arrow />
+            </Button>
           </div>
           <Paragraph>
             We also help companies{" "}
@@ -45,6 +58,7 @@ const UnifiedPlatform = () => {
           height={971}
         />
       </ContainerFull>
+      <div className="dividerOne"></div>
     </section>
   );
 };

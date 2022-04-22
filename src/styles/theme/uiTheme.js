@@ -5,6 +5,7 @@ const theme = {
       subtitles: "#425466",
       primarybuttons: "#11253e",
       purple: "#635CFF",
+      cian: "#01D4FF",
       darkblue: "#092540",
       white: "#ffffff",
       buttonbase: "11253E",
@@ -12,6 +13,7 @@ const theme = {
     },
     secondary: {
       secondarybuttons: "#19385E",
+      secondaryback: "#6D5EE0",
       trans: "transparent",
       light: "rgba(255,255,255,.2)",
       light2: "rgba(255,255,255,.5)",
