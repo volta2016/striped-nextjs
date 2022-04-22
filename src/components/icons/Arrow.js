@@ -9,7 +9,7 @@ export default function Arrow({ className }) {
       width="10px"
       height="12px"
       viewBox="0 0 451.847 451.847"
-      className={className ? "ountlinetwo" : ""}
+      className={className}
     >
       <g>
         <path

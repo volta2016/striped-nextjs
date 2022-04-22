@@ -5,7 +5,10 @@ export const ParagraphContainer = styled.p`
   line-height: 34px;
   margin: 0;
   overflow-wrap: break-word;
-  line-height: 34px;
+  &.card {
+    margin-left: 1rem;
+  }
+
   & span {
     color: ${({ theme }) => theme.colors.primary.purple};
     font-weight: ${({ theme }) => theme.sizeWeight.md};

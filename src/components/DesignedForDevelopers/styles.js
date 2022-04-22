@@ -12,7 +12,7 @@ export const WrapBox = styled.div`
   }
 `;
 
-export const Card = styled.article`
+export const CardContent = styled.article`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;

@@ -23,8 +23,7 @@ export const TitleHthree = styled.h3`
 export const TitleHthreeSub = styled.h3`
   color: ${({ colortitle }) =>
     colortitle === "white" ? "#ffffff" : "#11253e"};
-  border-left-width: 2px;
-  border-color: ${({ colortitle }) =>
-    colortitle === "white" ? "#01D4FF" : "#635CFF"};
+  border-left: ${({ colortitle }) =>
+    colortitle === "white" ? "2px solid #01D4FF" : "2px 0 0 0 solid #635CFF"};
   padding-left: 1rem;
 `;

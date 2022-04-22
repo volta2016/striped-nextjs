@@ -1,6 +1,6 @@
-import React from "react";
 import { SectionDesignedForDevelopers, WrapBox } from "./styles";
 import { Container } from "../../styles/InterfaceComponents";
+import Card from "./Card";
 import UrlButtons from "../constants/urlButtons";
 import Paragraph from "../Common/paragraph";
 import TitleH2 from "../Common/title/TitleH2";
@@ -30,7 +30,19 @@ const DesignedForDevelopers = () => (
           >
             Star with paymets <Arrow />
           </Button>
-          <WrapBox></WrapBox>
+          <WrapBox>
+            <Card
+              src="/images/tools-for-every-stack.png"
+              subtitle="Tools for every stack"
+              text="We offer client and server libraries in everything from React and PHP to .NET and iOS."
+              className="icon"
+            />
+            <Card
+              src="/images/tools-for-every-stack.png"
+              subtitle="Tools for every stack"
+              text="We offer client and server libraries in everything from React and PHP to .NET and iOS."
+            />
+          </WrapBox>
         </div>
         <div>
           <Image

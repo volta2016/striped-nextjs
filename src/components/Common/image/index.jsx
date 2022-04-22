@@ -5,6 +5,8 @@ const NextImage = ({ src, alt, width, height, className }) => {
     <>
       {className === "image" ? (
         <Image src={src} height={height} alt={alt} className={className} />
+      ) : className === "icon" ? (
+        <Image src={src} height={height} alt={alt} className={className} />
       ) : (
         <HeroImage src={src} alt={alt} width={width} height={height} />
       )}

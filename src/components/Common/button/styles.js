@@ -38,6 +38,14 @@ export const ButtonBase = styled.a`
           fill: #19385e;
         }
       }
+      &.outlinecard {
+        color: ${({ theme }) => theme.colors.primary.cian};
+        background: ${({ theme }) => theme.colors.secondary.trans};
+        & svg.outlinecard {
+          margin-left: 0.5rem;
+          fill: ${({ theme }) => theme.colors.primary.cian};
+        }
+      }
     `}
 
   ${(props) =>

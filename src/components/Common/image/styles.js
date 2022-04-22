@@ -18,4 +18,7 @@ export const Image = styled.img`
   &.image {
     width: auto;
   }
+  &.icon {
+    width: 80px;
+  }
 `;
