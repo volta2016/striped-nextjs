@@ -19,6 +19,12 @@ export const ParagraphContainer = styled.p`
       color: ${({ bold }) => (bold === "purple" ? "#635CFF" : "#01D4FF")};
       font-weight: ${({ theme }) => theme.sizeWeight.lg};
     `}
+  ${(props) =>
+    props.lineheight &&
+    css`
+      line-height: 24px;
+      padding-left: 1rem;
+    `}
 `;
 
 //colorfont;

@@ -24,6 +24,7 @@ export const Container = styled.div`
     css`
       display: grid;
       grid-template-columns: 620px 1fr;
+      padding: 5rem 0;
       @media (min-width: 768px) {
         //grid-gap: 0 1rem;
         //grid-template-columns: repeat(2, 1fr);
