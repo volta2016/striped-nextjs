@@ -20,7 +20,7 @@ const Card = ({ src, subtitle, text }) => {
         role="link"
         target="_blank"
         rel="noreferrer"
-        outline="true"
+        outline="cian"
         className="outlinecard"
       >
         See libraries

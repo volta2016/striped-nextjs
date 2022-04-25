@@ -39,11 +39,12 @@ export const ButtonBase = styled.a`
         }
       }
       &.outlinecard {
-        color: ${({ theme }) => theme.colors.primary.cian};
+        color: ${({ outline }) => (outline === "cian" ? "#01D4FF" : "#635CFF")};
         background: ${({ theme }) => theme.colors.secondary.trans};
         & svg.outlinecard {
           margin-left: 0.5rem;
-          fill: ${({ theme }) => theme.colors.primary.cian};
+          fill: ${({ outline }) =>
+            outline === "cian" ? "#01D4FF" : "#635CFF"};
         }
       }
     `}
