@@ -26,4 +26,9 @@ export const TitleHthreeSub = styled.h3`
   border-left: ${({ colortitle }) =>
     colortitle === "white" ? "2px solid #01D4FF" : "2px solid #635CFF"};
   padding-left: 1rem;
+  &.stadistics {
+    font-size: ${({ theme }) => theme.sizeFont.lg2};
+    line-height: 54px;
+    margin: 2.75rem 0 1rem 0;
+  }
 `;

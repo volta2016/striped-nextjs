@@ -9,4 +9,5 @@ export const BoxOne = styled.div`
 export const CardContainer = styled.div`
   display: flex;
   gap: 1rem;
+  margin-top: 6.625rem;
 `;

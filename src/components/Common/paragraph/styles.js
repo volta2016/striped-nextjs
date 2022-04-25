@@ -13,6 +13,10 @@ export const ParagraphContainer = styled.p`
     color: ${({ theme }) => theme.colors.primary.purple};
     font-weight: ${({ theme }) => theme.sizeWeight.md};
   }
+  & span.globalscale {
+    color: ${({ theme }) => theme.colors.primary.cian};
+    font-weight: ${({ theme }) => theme.sizeWeight.md};
+  }
   ${(props) =>
     props.bold &&
     css`
