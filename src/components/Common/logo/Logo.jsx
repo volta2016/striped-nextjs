@@ -2,9 +2,9 @@ import React from "react";
 import { LogoTitle } from "./styles";
 import Link from "next/link";
 
-const Logo = ({ href, name }) => (
+const Logo = ({ href, name, className }) => (
   <Link href={href} passHref>
-    <LogoTitle>{name}</LogoTitle>
+    <LogoTitle className={className}>{name}</LogoTitle>
   </Link>
 );
 

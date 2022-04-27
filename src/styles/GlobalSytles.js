@@ -21,10 +21,20 @@ const GlobalStyle = createGlobalStyle`
   header {
     position: relative;
   }
+
+  footer {
+    background: ${({ theme }) => theme.colors.primary.grey};
+    & div a.copyright {
+      display: block;
+      text-align: center;
+      padding: 0.5rem 0;
+    }
+  }
   
   ul, ol {
     padding: 0;
     margin: 0;
+    list-style: none;
   }
 
   p {
@@ -39,8 +49,8 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     list-style: none;
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
     @media(hover: hover) {
       &:hover {
         text-decoration: none;
@@ -70,6 +80,12 @@ const GlobalStyle = createGlobalStyle`
     height: 256px;
      clip-path: polygon(0 100%,100% 0,100% 101%,0% 101%);
     background: ${({ theme }) => theme.colors.primary.white} ;
+  }
+
+  .dividerThree {
+    height: 256px;
+    clip-path: polygon(0 100%,100% 0,100% 101%,0% 101%);
+    background: ${({ theme }) => theme.colors.primary.grey} ;
   }
 
 `;

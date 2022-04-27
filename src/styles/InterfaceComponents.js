@@ -11,7 +11,6 @@ export const Container = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0;
     `}
   ${(props) =>
     props.wrapper &&
@@ -45,4 +44,9 @@ export const ContainerFull = styled.div`
   width: 100%;
   display: grid;
   place-content: end;
+`;
+
+export const CardContent = styled.article`
+  display: flex;
+  flex-direction: column;
 `;

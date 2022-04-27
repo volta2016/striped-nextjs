@@ -7,6 +7,7 @@ export const ParagraphContainer = styled.p`
   overflow-wrap: break-word;
   &.card {
     margin-left: 1rem;
+    line-height: 24px;
   }
 
   & span {

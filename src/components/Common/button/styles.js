@@ -46,6 +46,9 @@ export const ButtonBase = styled.a`
           fill: ${({ outline }) =>
             outline === "cian" ? "#01D4FF" : "#635CFF"};
         }
+        &.ready {
+          margin-left: 1.25rem;
+        }
       }
     `}
 

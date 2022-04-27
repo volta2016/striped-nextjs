@@ -1,6 +1,6 @@
 import { SectionDesignedForDevelopers, WrapBox } from "./styles";
 import { Container } from "../../styles/InterfaceComponents";
-import Card from "./Card";
+import Card from "../Common/card/Card";
 import UrlButtons from "../constants/urlButtons";
 import Paragraph from "../Common/paragraph";
 import TitleH2 from "../Common/title/TitleH2";

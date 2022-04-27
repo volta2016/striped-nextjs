@@ -1,17 +1,12 @@
 import styled from "styled-components";
 
-export const LogoTitle = styled.a`
-  font-size: ${({ theme }) => theme.sizeFont.lg1};
-  color: ${({ theme }) => theme.colors.primary.white};
-  font-weight: ${({ theme }) => theme.sizeWeight.md};
-`;
-
 export const Nav = styled.nav`
-  position: sticky;
+  width: 100%;
+  position: fixed;
   top: 0;
   padding: 1rem 1rem;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.01);
+  z-index: 4;
+  background: ${({ theme }) => theme.colors.secondary.stripegradient};
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
   backdrop-filter: blur(0.05rem);
 `;

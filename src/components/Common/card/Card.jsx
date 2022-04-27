@@ -1,14 +1,14 @@
-import UrlButtons from "../constants/urlButtons";
+import UrlButtons from "components/constants/urlButtons";
 import Button from "components/Common/button";
 import Paragraph from "components/Common/paragraph";
 import H3subTitle from "components/Common/title/H3subTitle";
 import Arrow from "components/icons/Arrow";
-import NextImage from "../Common/image/";
-import { CardContent } from "./styles";
+import NextImage from "../image";
+import { CardContent } from "../../../styles/InterfaceComponents";
 
 const Card = ({ src, subtitle, text }) => {
   return (
-    <CardContent>
+    <CardContent className="card color">
       <NextImage src={src} alt={text} height="80" width="80" className="icon" />
       <H3subTitle colortitle="white">{subtitle}</H3subTitle>
       <Paragraph className="card" colorfont="white">
