@@ -5,6 +5,9 @@ export const TitleHone = styled.h1`
   font-size: ${({ theme }) => theme.sizeFont.xxl};
   line-height: 109px;
   margin: 7.7rem 0 0 0;
+  @media (max-width: 576px) {
+    font-size: ${({ theme }) => theme.sizeFont.xl};
+  }
 `;
 
 export const TitleHtwo = styled.h2`

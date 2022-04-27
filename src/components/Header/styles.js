@@ -15,6 +15,9 @@ export const NavGroup = styled.ul`
   display: flex;
   gap: 2.5rem;
   list-style: none;
+  @media (max-width: 576px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li`
@@ -59,6 +62,9 @@ export const BoxHero = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  @media (max-width: 576px) {
+    width: 100%;
+  }
 `;
 
 export const BoxButton = styled.div`

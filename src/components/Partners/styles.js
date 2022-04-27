@@ -14,7 +14,19 @@ export const CompanyLogo = styled.div`
   display: grid;
   width: 100%;
   place-items: center;
-  @media (min-width: 768px) {
+  &:nth-child(1),
+  &:nth-child(5) {
+    display: grid;
+    width: 100%;
+    place-items: center;
+  }
+  &:nth-child(4),
+  &:nth-child(8) {
+    display: grid;
+    width: 100%;
+    place-items: center;
+  }
+  @media (min-width: 769px) {
     &:nth-child(1),
     &:nth-child(5) {
       display: grid;

@@ -11,6 +11,7 @@ export const Container = styled.div`
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0 1rem;
     `}
   ${(props) =>
     props.wrapper &&
@@ -23,10 +24,10 @@ export const Container = styled.div`
     css`
       display: grid;
       grid-template-columns: 620px 1fr;
-      padding: 5rem 0;
-      @media (min-width: 768px) {
-        //grid-gap: 0 1rem;
-        //grid-template-columns: repeat(2, 1fr);
+      padding: 5rem 1rem;
+      @media (max-width: 768px) {
+        grid-gap: 2rem 0;
+        grid-template: 1fr 532px / 1fr;
       }
     `}
   @media (max-width: 992px) {
@@ -44,6 +45,7 @@ export const ContainerFull = styled.div`
   width: 100%;
   display: grid;
   place-content: end;
+  padding-left: 1rem;
 `;
 
 export const CardContent = styled.article`
