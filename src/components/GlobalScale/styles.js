@@ -5,7 +5,11 @@ export const SectionGlobalScale = styled.section`
     ${({ theme }) => theme.colors.primary.darkblue};
   background-position: top right;
   background-repeat: no-repeat;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
+  @media (max-width: 576px) {
+    background-size: 114%;
+    background-position: top 0px right -34px;
+  }
 `;
 
 export const BoxGlobal = styled.div`
@@ -18,4 +22,8 @@ export const CardContainer = styled.div`
   display: flex;
   gap: 1rem;
   margin-top: 2.75rem;
+  flex-direction: rom;
+  @media (max-width: 769px) {
+    flex-direction: column;
+  }
 `;

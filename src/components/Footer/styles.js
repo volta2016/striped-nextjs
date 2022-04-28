@@ -15,3 +15,11 @@ export const WrapList = styled.div`
   flex-wrap: wrap;
   padding: 5.938rem 0;
 `;
+
+export const GroupList = styled.div`
+  @media (max-width: 576px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+`;

@@ -6,7 +6,7 @@ export const TitleHone = styled.h1`
   line-height: 109px;
   margin: 7.7rem 0 0 0;
   @media (max-width: 576px) {
-    font-size: ${({ theme }) => theme.sizeFont.xl};
+    font-size: ${({ theme }) => theme.sizeFont.lg3};
   }
 `;
 
@@ -21,6 +21,7 @@ export const TitleHtwo = styled.h2`
 export const TitleHthree = styled.h3`
   color: ${({ theme }) => theme.colors.primary.headlines};
   font-size: ${({ theme }) => theme.sizeFont.lg2};
+  line-height: 54px;
 `;
 
 export const TitleHthreeSub = styled.h3`

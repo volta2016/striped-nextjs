@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const DesignedForDevelopers = () => (
   <>
-    <SectionDesignedForDevelopers>
+    <SectionDesignedForDevelopers id="Developers">
       <Container gridbox={true}>
         <div>
           <Paragraph bold="cian">Designed for developers</Paragraph>

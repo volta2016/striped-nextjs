@@ -5,7 +5,7 @@ import GridPartners from "./GridPartners";
 
 const Partners = () => {
   return (
-    <section>
+    <section id="Products">
       <Container>
         <GridPartners partners={partners.brands}></GridPartners>
       </Container>

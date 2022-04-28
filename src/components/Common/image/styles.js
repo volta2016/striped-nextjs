@@ -16,7 +16,9 @@ export const Image = styled.img`
   width: 100%;
   object-fit: contain;
   &.image {
-    width: auto;
+    @media (max-width: 576px) {
+      max-width: 100px;
+    }
   }
   &.icon {
     width: 80px;

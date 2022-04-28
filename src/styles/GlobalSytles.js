@@ -18,14 +18,21 @@ const GlobalStyle = createGlobalStyle`
     line-height: 24px;
     color: ${({ theme }) => theme.colors.primary.subtitles};
   }
-  
   header {
     position: relative;
   }
 
   footer {
     background: ${({ theme }) => theme.colors.primary.grey};
-    & div a {
+     & div a.logo-footer {
+      display: block;
+      text-align: inherit;
+      padding: 1rem 0;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+    & div a.copyright {
       display: block;
       text-align: center;
       padding: 0.5rem 0;

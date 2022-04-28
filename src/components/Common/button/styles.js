@@ -11,6 +11,10 @@ export const ButtonBase = styled.a`
   display: inline-block;
   align-items: center;
   width: auto;
+  height: 40px;
+  @media (max-width: 576px) {
+    padding: 0.5rem 0.8rem;
+  }
   &:hover {
     background: ${({ theme }) => theme.colors.secondary.secondarybuttons};
   }
@@ -33,6 +37,9 @@ export const ButtonBase = styled.a`
       &.ountlinetwo {
         color: ${({ theme }) => theme.colors.primary.darkblue};
         margin-left: 2rem;
+        @media (max-width: 576px) {
+          margin-left: 1rem;
+        }
         & svg.ountlinetwo {
           margin-left: 0.5rem;
           fill: #19385e;

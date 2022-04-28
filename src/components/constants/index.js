@@ -1,18 +1,18 @@
 const menuItems = [
   {
-    path: "/#banner",
+    path: "#Products",
     name: "Products",
   },
   {
-    path: "/#services",
+    path: "#Developers",
     name: "Developers",
   },
   {
-    path: "/#testimonials",
+    path: "#Company",
     name: "Company",
   },
   {
-    path: "/#news",
+    path: "#Pricing",
     name: "Pricing",
   },
 ];

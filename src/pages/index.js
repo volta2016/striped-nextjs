@@ -7,10 +7,11 @@ import UnifiedPlatform from "../components/UnifiedPlatform";
 import DesignedForDevelopersWhite from "components/DesignedForDevelopersWhite";
 import GlobalScale from "components/GlobalScale";
 import ReadyToGetStarted from "components/ReadyToGetStarted";
-const Title = styled.h1`
+
+/*const Title = styled.h1`
   font-size: 50px;
   color: ${({ theme }) => theme.colors.primarydarkblue};
-`;
+`;*/
 
 const Home = () => {
   return (

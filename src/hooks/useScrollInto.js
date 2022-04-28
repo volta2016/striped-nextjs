@@ -1,16 +1,16 @@
 const useScrollInto = (sectionId) => {
   const handleScroll = () => {
-    const getId = document.getElementById(sectionId)
-    if (typeof window !== 'undefined') {
+    const getId = document.getElementById(sectionId);
+    if (typeof window !== "undefined") {
       window.scroll({
         top: getId.offsetTop - 20,
         left: 0,
-        behavior: 'smooth',
-      })
+        behavior: "smooth",
+      });
     }
-  }
+  };
 
-  return handleScroll
-}
+  return handleScroll;
+};
 
-export default useScrollInto
+export default useScrollInto;

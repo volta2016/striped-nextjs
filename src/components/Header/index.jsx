@@ -12,7 +12,7 @@ const Header = () => {
     <header>
       <Nav>
         <Container justify={true}>
-          <Logo href="/#" name="Striped" />
+          <Logo href="/" name="Striped" />
           <NavBar />
           <Button
             link="/"

@@ -9,7 +9,7 @@ import CardTwo from "components/Common/card/CardTwo";
 
 const ReadyToGetStarted = () => {
   return (
-    <section>
+    <section id="Pricing">
       <Container>
         <Wrapper>
           <div>
@@ -27,7 +27,7 @@ const ReadyToGetStarted = () => {
               rel="noreferrer"
               backcolor="purple"
             >
-              Star with paymets <Arrow />
+              Star now <Arrow />
             </Button>
             <Button
               link={UrlButtons.Github}

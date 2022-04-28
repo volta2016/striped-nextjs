@@ -1,25 +1,27 @@
 import React from "react";
-import { ListFooter } from "./styles";
+import { ListFooter, GroupList } from "./styles";
 
 const UseCasesAndResources = () => (
-  <div>
+  <GroupList>
     <ListFooter>
-      <li>Use cases</li>
-      <li>Documentation</li>
-      <li>API reference</li>
-      <li>API status</li>
+      <li>Use Cases</li>
+      <li>SaaS</li>
+      <li>Platforms</li>
+      <li>Marketplaces</li>
+      <li>Ecommerce</li>
     </ListFooter>
     <ListFooter>
-      <li>Company</li>
-      <li>About</li>
-      <li>Customers</li>
-      <li>Enterprise</li>
-      <li>Partners</li>
-      <li>Jobs</li>
-      <li>Blog</li>
-      <li>Newsroom</li>
+      <li>Resource</li>
+      <li>Support</li>
+      <li>Contact</li>
+      <li>Guides</li>
+      <li>Privacy & terms</li>
+      <li>Licenses</li>
+      <li>COVID-19</li>
+      <li>Sitemap</li>
+      <li>Cookie settings</li>
     </ListFooter>
-  </div>
+  </GroupList>
 );
 
 export default UseCasesAndResources;

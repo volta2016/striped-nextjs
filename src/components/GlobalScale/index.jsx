@@ -6,7 +6,7 @@ import { SectionGlobalScale, BoxGlobal, CardContainer } from "./styles";
 
 const GlobalScale = () => {
   return (
-    <SectionGlobalScale>
+    <SectionGlobalScale id="Company">
       <Container>
         <BoxGlobal>
           <Paragraph bold="cian">Global scale</Paragraph>
