@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-  margin: auto;
+  margin: 0 auto;
   max-width: 1112px;
   width: 100%;
   padding: 0 1rem;
@@ -39,6 +39,12 @@ export const Container = styled.div`
   @media (max-width: 576px) {
     max-width: 540px;
   }
+`;
+
+export const WrapHeader = styled.div`
+  padding: 0 1rem;
+  max-width: 1112px;
+  margin: 0 auto;
 `;
 
 export const ContainerFull = styled.div`

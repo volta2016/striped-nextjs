@@ -7,4 +7,9 @@ export const LogoTitle = styled.a`
   &.logo-footer {
     color: ${({ theme }) => theme.colors.primary.headlines};
   }
+  @media (min-width: 768px) {
+    &.logomb {
+      display: none;
+    }
+  }
 `;

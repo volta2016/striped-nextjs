@@ -7,6 +7,7 @@ import UnifiedPlatform from "../components/UnifiedPlatform";
 import DesignedForDevelopersWhite from "components/DesignedForDevelopersWhite";
 import GlobalScale from "components/GlobalScale";
 import ReadyToGetStarted from "components/ReadyToGetStarted";
+import Hero from "components/Hero";
 
 /*const Title = styled.h1`
   font-size: 50px;
@@ -16,6 +17,7 @@ import ReadyToGetStarted from "components/ReadyToGetStarted";
 const Home = () => {
   return (
     <>
+      <Hero />
       <Partners />
       <UnifiedPlatform />
       <DesignedForDevelopers />

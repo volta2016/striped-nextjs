@@ -4,7 +4,7 @@ const useCurrentLink = () => {
   const addClassCurrent = () => {
     const sections = document.querySelectorAll("section");
     const navLi = document.querySelectorAll("nav ul li#topmenu");
-    console.log(navLi);
+    //console.log(navLi);
     let current;
 
     sections.forEach((section) => {

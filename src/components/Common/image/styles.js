@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const HeroImage = styled.img`
   display: none;
   position: absolute;
-  top: 20%;
+  top: 115px;
   right: 0;
   width: 600px;
   z-index: 3;

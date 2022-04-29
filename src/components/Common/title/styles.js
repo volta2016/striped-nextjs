@@ -4,7 +4,7 @@ export const TitleHone = styled.h1`
   color: ${({ theme }) => theme.colors.primary.headlines};
   font-size: ${({ theme }) => theme.sizeFont.xxl};
   line-height: 109px;
-  margin: 7.7rem 0 0 0;
+  margin: 11.7rem 0 0 0;
   @media (max-width: 576px) {
     font-size: ${({ theme }) => theme.sizeFont.lg3};
   }

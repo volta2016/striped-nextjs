@@ -18,10 +18,7 @@ const GlobalStyle = createGlobalStyle`
     line-height: 24px;
     color: ${({ theme }) => theme.colors.primary.subtitles};
   }
-  header {
-    position: relative;
-  }
-
+  
   footer {
     background: ${({ theme }) => theme.colors.primary.grey};
      & div a.logo-footer {
@@ -95,7 +92,14 @@ const GlobalStyle = createGlobalStyle`
     clip-path: polygon(0 100%,100% 0,100% 101%,0% 101%);
     background: ${({ theme }) => theme.colors.primary.grey} ;
   }
-
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    background: #fff;
+  }
 `;
 
 export default GlobalStyle;

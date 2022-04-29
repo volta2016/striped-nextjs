@@ -1,6 +1,6 @@
 import React from "react";
 import { TitleHone } from "components/Common/title/styles";
-import { BoxHero, BoxButton } from "./styles";
+import { BoxButton, BoxHero } from "./styles";
 import UrlButtons from "../constants/urlButtons";
 import Paragraph from "components/Common/paragraph";
 import Button from "../Common/button";

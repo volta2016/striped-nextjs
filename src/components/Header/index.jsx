@@ -1,19 +1,32 @@
-import { Container } from "styles/InterfaceComponents";
-import { Nav, HeaderBg } from "./styles";
+import { WrapHeader } from "styles/InterfaceComponents";
+import { ContainerHeader, MenuButton, Nav, Overlay } from "./styles";
+import { AiOutlineMenu } from "react-icons/ai";
+//import { useRef } from "react";
+//import { motion, useCycle } from "framer-motion";
+
 import Button from "../Common/button";
 import NavBar from "./NavBar";
-import Box from "./Box";
-import NextImage from "components/Common/image";
 import Logo from "components/Common/logo/Logo";
+import useToggle from "hooks/useToggle";
+//import MenuToggle from "./MenuToggle";
+//import useDimensions from "hooks/useDimension";
+
 //import Arrow from "../icons/Arrow";
 
 const Header = () => {
+  const { open, handleOpen, handleClose } = useToggle();
   return (
-    <header>
-      <Nav>
-        <Container justify={true}>
+    <ContainerHeader>
+      <WrapHeader>
+        <Logo className="logomb" href="/" name="Striped" />
+        <MenuButton onClick={handleOpen}>
+          <AiOutlineMenu size="2.3rem" />
+          <Overlay isOpen={open} />
+        </MenuButton>
+        <Nav isOpen={open}>
           <Logo href="/" name="Striped" />
-          <NavBar />
+
+          <NavBar handleClose={handleClose} />
           <Button
             link="/"
             tipo="link"
@@ -24,22 +37,9 @@ const Header = () => {
           >
             Sign in
           </Button>
-        </Container>
-      </Nav>
-      <HeaderBg />
-      <Container wrapper={true}>
-        <Box />
-      </Container>
-      <NextImage
-        src="/payment-hero.png"
-        alt="Payments 
-              infrastructure 
-              for the internet"
-        width="600"
-        height="700"
-        className="heroimage"
-      />
-    </header>
+        </Nav>
+      </WrapHeader>
+    </ContainerHeader>
   );
 };
 
