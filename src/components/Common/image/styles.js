@@ -1,4 +1,10 @@
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
+
+const bounceAnimation = keyframes`
+ 0% { transform: translateY(0); }
+ 50% { transform: translateY(-20px); }
+ 100% { transform: translateY(0); }
+`;
 
 export const HeroImage = styled.img`
   display: none;
@@ -7,6 +13,10 @@ export const HeroImage = styled.img`
   right: 0;
   width: 600px;
   z-index: 3;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: ${bounceAnimation};
+  animation-timing-function: linear;
   @media (min-width: 1280px) {
     display: block;
   }

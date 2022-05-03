@@ -7,9 +7,26 @@ export const ContainerHeader = styled.header`
   left: 0;
   right: 0;
   z-index: 5;
-  background: ${({ theme }) => theme.colors.secondary.stripegradient};
+  background: ${({ theme }) => theme.colors.secondary.trans};
   box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
   backdrop-filter: blur(0.05rem);
+  transition: all 0.9s ease;
+  &.colorChange {
+    background: ${({ theme }) => theme.colors.secondary.stripegradient};
+    @media (min-width: 769px) {
+      animation: 0.5s ease 0s normal 0.5 fadein;
+      backdrop-filter: none;
+      @keyframes fadein {
+        from {
+          opacity: 0.5;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   ${WrapHeader} {
     display: grid;
     grid-template-columns: 1fr;
@@ -134,7 +151,7 @@ export const MenuButton = styled.button`
 export const Overlay = styled.div`
   width: 24px;
   height: 24px;
-  background: ${({ theme }) => theme.colors.primary.primarybuttons};
+  background: ${({ theme }) => theme.colors.secondary.stripegradient};
   border-radius: 50%;
   display: flex;
   position: absolute;

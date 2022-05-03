@@ -1,12 +1,12 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const BoxOne = styled.div`
   max-width: 620px;
   display: flex;
   flex-direction: column;
 `;
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(motion.div)`
   display: flex;
   gap: 1rem;
   margin-top: 6.625rem;
@@ -15,3 +15,5 @@ export const CardContainer = styled.div`
     flex-direction: column;
   }
 `;
+
+export const Article = styled(motion.article)``;

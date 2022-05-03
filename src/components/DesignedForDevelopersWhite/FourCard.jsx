@@ -1,12 +1,28 @@
+import { motion } from "framer-motion";
 import NextImage from "components/Common/image";
 import Paragraph from "components/Common/paragraph";
 import { TitleHthreeSub } from "components/Common/title/styles";
-import { CardContainer } from "./styles";
+import { CardContainer, Article } from "./styles";
 
 const FourCard = () => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+  };
+
   return (
-    <CardContainer>
-      <article>
+    <CardContainer variants={container} initial="hidden" animate="show">
+      <Article variants={item}>
         <NextImage
           src="/images/close-to-the-metal.png"
           alt="close to the metal"
@@ -22,8 +38,8 @@ const FourCard = () => {
           checkout flows in the browser, we operate on and optimize at every
           level of the financial stack.
         </Paragraph>
-      </article>
-      <article>
+      </Article>
+      <Article variants={item}>
         <NextImage
           src="/images/fastest-improving-platform.png"
           alt="fastest improving platform"
@@ -39,8 +55,8 @@ const FourCard = () => {
           year to help you stay ahead of industry shifts. (On average, we deploy
           our production API 16x per day.)
         </Paragraph>
-      </article>
-      <article>
+      </Article>
+      <Article variants={item}>
         <NextImage
           src="/images/battle-tested-reliability.png"
           alt="battle tested reliability"
@@ -56,8 +72,8 @@ const FourCard = () => {
           scalable and redundant. Striped is certified to the highest compliance
           standards.
         </Paragraph>
-      </article>
-      <article>
+      </Article>
+      <Article variants={item}>
         <NextImage
           src="/images/intelligent-optimizations.png"
           alt="intelligent optimizations"
@@ -73,7 +89,7 @@ const FourCard = () => {
           points and help increase revenue across conversion, fraud, revenue
           recovery, and more.
         </Paragraph>
-      </article>
+      </Article>
     </CardContainer>
   );
 };
