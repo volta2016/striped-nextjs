@@ -26,6 +26,7 @@ export const ButtonBase = styled.a`
   ${(props) =>
     props.outline &&
     css`
+      text-align: center;
       background: ${({ theme }) => theme.colors.secondary.light};
       &:hover {
         background: ${({ theme }) => theme.colors.secondary.light2};
