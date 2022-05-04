@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { WrapHeader } from "styles/InterfaceComponents";
 import { ContainerHeader, MenuButton, Nav, Overlay } from "./styles";
 import { AiOutlineMenu } from "react-icons/ai";
+import UrlButtons from "../constants/urlButtons";
 import Button from "../Common/button";
 import NavBar from "./NavBar";
 import Logo from "components/Common/logo/Logo";
@@ -38,7 +39,7 @@ const Header = () => {
 
           <NavBar handleClose={handleClose} />
           <Button
-            link="/"
+            link={UrlButtons.Github}
             tipo="link"
             role="link"
             target="_blank"
