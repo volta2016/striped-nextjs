@@ -1,15 +1,15 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   title: "Striped Landing Page",
-  description: "Landing Page | Next JS",
+  description: "Landing Page | Next JS | styled Components",
   openGraph: {
-    url: "https://blog-voltadev.vercel.app/",
+    url: "/",
     title: "Striped",
     description:
-      "Landing Page | Next JS | #reactjs #nextjs #reactjs #javascript ",
+      "Landing Page | Next JS | #reactjs #nextjs #reactjs #javascript #styledcomponents",
     images: [
       {
-        url: "https://voltauxui.cl/blog/hero-rrss-blog-voltadev.jpg",
+        url: "/hero-rrss-blog-voltadev.jpg",
         width: 800,
         height: 531,
         alt: "Landing Page | Next JS | Framer Motion",

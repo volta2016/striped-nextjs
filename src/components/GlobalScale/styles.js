@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const SectionGlobalScale = styled.section`
   background: url(/images/earth-background.png),
@@ -18,7 +19,7 @@ export const BoxGlobal = styled.div`
   flex-direction: column;
 `;
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(motion.div)`
   display: flex;
   gap: 1rem;
   margin-top: 2.75rem;

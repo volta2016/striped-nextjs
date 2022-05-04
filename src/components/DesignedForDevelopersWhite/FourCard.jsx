@@ -1,27 +1,32 @@
-import { motion } from "framer-motion";
 import NextImage from "components/Common/image";
 import Paragraph from "components/Common/paragraph";
 import { TitleHthreeSub } from "components/Common/title/styles";
 import { CardContainer, Article } from "./styles";
 
-const FourCard = () => {
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.5,
-      },
+const container = {
+  hidden: { opacity: 0, x: "100vh" },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      staggerChildren: 0.5,
     },
-  };
+  },
+};
 
-  const item = {
-    hidden: { opacity: 0 },
-    show: { opacity: 1 },
-  };
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
 
+const FourCard = () => {
   return (
-    <CardContainer variants={container} initial="hidden" animate="show">
+    <CardContainer
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+    >
       <Article variants={item}>
         <NextImage
           src="/images/close-to-the-metal.png"
