@@ -9,13 +9,13 @@ export default {
       "Landing Page | Next JS | #reactjs #nextjs #reactjs #javascript #styledcomponents",
     images: [
       {
-        url: "/hero-rrss-blog-voltadev.jpg",
+        url: "/striped-nextjs-cover.png",
         width: 800,
         height: 531,
         alt: "Landing Page | Next JS | Framer Motion",
       },
     ],
-    site_name: "VoltaDev Blog",
+    site_name: "Striped Landing Page - Next JS ",
   },
   twitter: {
     handle: "@giovanniivolta",
