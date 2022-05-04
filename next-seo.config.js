@@ -3,13 +3,13 @@ export default {
   title: "Striped Landing Page",
   description: "Landing Page | Next JS | styled Components",
   openGraph: {
-    url: "/",
+    url: "https://striped-nextjs.vercel.app",
     title: "Striped",
     description:
       "Landing Page | Next JS | #reactjs #nextjs #reactjs #javascript #styledcomponents",
     images: [
       {
-        url: "/striped-nextjs-cover.png",
+        url: "https://striped-nextjs.vercel.app/striped-nextjs-cover.png",
         width: 800,
         height: 531,
         alt: "Landing Page | Next JS | Framer Motion",
