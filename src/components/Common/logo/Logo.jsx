@@ -1,4 +1,3 @@
-import React from "react";
 import { LogoTitle } from "./styles";
 import Link from "next/link";
 

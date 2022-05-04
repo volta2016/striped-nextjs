@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, ContainerFull } from "../../styles/InterfaceComponents";
 import { GridText } from "./styles";
 import { motion } from "framer-motion";
@@ -8,16 +7,6 @@ import Paragraph from "../Common/paragraph";
 import TitleH2 from "../Common/title/TitleH2";
 import Button from "components/Common/button";
 import Arrow from "components/icons/Arrow";
-
-{
-  /* <Container>
-        <motion.div
-          initial={{ opacity: 0, x: "-100vh" }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 1, duration: 1 }}
-          viewport={{ once: true }}
-        ></motion.div> */
-}
 
 const UnifiedPlatform = () => {
   return (

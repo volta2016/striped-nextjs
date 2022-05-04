@@ -1,4 +1,3 @@
-import React from "react";
 import { BoxOne } from "./styles";
 import { Container } from "styles/InterfaceComponents";
 import { motion } from "framer-motion";
