@@ -59,8 +59,8 @@ const UnifiedPlatform = () => {
       </Container>
       <ContainerFull>
         <motion.div
-          initial={{ opacity: 0, x: "-100vh" }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: "-100%" }}
+          whileInView={{ opacity: 1, x: "0%" }}
           transition={{ delay: 1, duration: 1 }}
           viewport={{ once: true }}
         >

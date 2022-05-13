@@ -4,10 +4,10 @@ import { TitleHthreeSub } from "components/Common/title/styles";
 import { CardContainer, Article } from "./styles";
 
 const container = {
-  hidden: { opacity: 0, x: "100vh" },
+  hidden: { opacity: 0, x: "-100%" },
   show: {
     opacity: 1,
-    x: 0,
+    x: "0%",
     transition: {
       staggerChildren: 0.5,
     },
