@@ -26,11 +26,11 @@ export const partners = {
     },
     {
       name: "+kota",
-      image: "/images/+kota.png",
+      image: "/images/kota.png",
     },
     {
       name: "Síclo",
-      image: "/images/siclo+.png",
+      image: "/images/siclo.png",
     },
   ],
 };
